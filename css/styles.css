@@ -141,6 +141,84 @@ a {
   height: 500px;
 }
 
+/* About */
+#about {
+  background: #f8f9fa;
+  padding: 90px 0;
+}
+#about h2 {
+  padding-bottom: 50px;
+}
+#about hr {
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.about-row {
+  display: flex;
+}
+
+.about-row-image img {
+  height: 500px;
+  padding-right: 90px;
+}
+
+/* skills */
+#skills {
+  padding: 90px 0;
+}
+#skills h2 {
+  padding-bottom: 50px;
+}
+
+.skills-row {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.skills-row-left,
+.skills-row-right {
+  width: 50%;
+  display: flex;
+}
+
+.skills-row-left-image,
+.skills-row-right-image {
+  width: 50%;
+  text-align: right;
+  padding-right: 50px;
+}
+.skills-row-left-image img,
+.skills-row-right-image img {
+  height: 100px;
+}
+
+/* Timeline */
+#timeline {
+  padding: 90px 0;
+  background: #f8f9fa;
+}
+#timeline h2 {
+  padding-bottom: 20px;
+}
+
+.timeline-row-tag {
+  width: 50%;
+  text-align: right;
+  padding-right: 80px;
+}
+.timeline-row-tag p span {
+  background: #c4c4c4;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 20px;
+}
+
+.timeline-row {
+  display: flex;
+  padding-bottom: 40px;
+}
+
 /* Footer */
 .footer-home {
   height: 10vh;
