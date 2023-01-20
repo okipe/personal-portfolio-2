@@ -5,6 +5,7 @@ $color-text: #000;
 $color-background: #f8f9fa;
 $color-title-outline: #fff;
 $color-timeline-background: #c4c4c4;
+$color-btn: #4d4d4d;
 
 /* Reset */
 
@@ -65,7 +66,7 @@ a {
 /* Utility Classes */
 .container {
     margin: auto;
-    max-width: 1300px;
+    max-width: 1350px; //Modificado respecto al tutorial
     overflow: auto;
     padding: 0 20px;
 }
@@ -76,6 +77,43 @@ a {
 
 .display-1 {
     font-size: 6rem;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px; 
+}
+
+.btn-dark {
+    background: $color-btn;
+    border: none;
+    color: $color-title-outline;
+
+    &:hover {
+        background: $color-title-outline;
+        border: 1px solid $color-btn;
+        color: $color-btn;
+    }
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 300;
+}
+
+form {
+    .form-group {
+        margin-bottom: 16px;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+    }
 }
 
 /* Navbar */
@@ -247,6 +285,37 @@ a {
     display: flex;
     padding-bottom: 40px;
 }
+
+/* Portfolio */
+#portfolio {
+    padding: 90px 0;
+    background: $color-background;
+
+    h2 {
+        padding-bottom: 50px;
+    }
+}
+
+.portfolio-row {
+    display: flex;
+}
+
+.portfolio-row-box {
+    margin: 15px;
+    background: $color-title-outline;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+
+    p {
+        text-align: center;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
 /* Footer */
 .footer-home {
     height: 10vh;
