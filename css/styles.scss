@@ -2,6 +2,8 @@
 
 /* Colors */
 $color-text: #000;
+$color-background: #f8f9fa;
+$color-title-outline: #fff;
 
 /* Reset */
 
@@ -76,6 +78,10 @@ a {
 }
 
 /* Navbar */
+.navbar-home{
+    height: 10vh;
+} // No lo pone como .nav-home. Ver si es usado, porque como .nav-home, se genera barras de desplazamientos
+
 #navbar {
     overflow: auto;
     padding-top: 20px;
@@ -93,6 +99,77 @@ a {
             height: 40px ;
         }
     }
+
+    ul {
+        float: right;
+        font-size: 14px;
+        list-style: none;
+
+        li {
+            float: left;
+
+            a {
+                display: block;
+                padding: 20px;
+                text-align: center;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            } 
+            
+            .current {
+                text-decoration: underline;
+            }
+        }
+        
+    }
 }
+
+/* Showcase */
+#showcase {
+    height: 80vh;
+    background: $color-background;
+    padding: 150px 0;
+
+    h1 {
+        line-height: 1em;
+    }
+
+    .title-outline {
+        color: $color-title-outline;
+        -webkit-text-stroke: 3px $color-text;
+    }
+}
+
+.showcase-row {
+    display: flex;
+}
+
+.showcase-row-title {
+    padding-top: 70px;
+}
+
+.showcase-row-image {
+    display: block;
+    margin: 0 auto;
+
+    img {
+        height: 500px;
+    }
+}
+
+/* Footer */
+.footer-home {
+    height: 10vh;
+}
+
+#mainfooter {
+    background: $color-background;
+    text-align: center;
+    padding: 30px;
+}
+
+
 
 // Me quedé en 23:51
