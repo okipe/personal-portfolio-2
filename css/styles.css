@@ -103,6 +103,11 @@ form .form-group {
 form .form-control {
   display: block;
   width: 100%;
+  padding: 7px 12px;
+  line-height: 1.5;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 4px;
 }
 
 /* Navbar */
@@ -277,6 +282,32 @@ form .form-control {
   margin-top: 0;
 }
 .portfolio-row-box img {
+  width: 100%;
+}
+
+/* Contact */
+#contact {
+  padding: 90px 0;
+  background: #f8f9fa;
+}
+#contact h2 {
+  padding-bottom: 50px;
+}
+
+.contact-form {
+  background: #fff;
+  width: 50%;
+  margin: 20px auto;
+  padding: 70px 50px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form h5 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-weight: 900;
+}
+.contact-form button {
   width: 100%;
 }
 
